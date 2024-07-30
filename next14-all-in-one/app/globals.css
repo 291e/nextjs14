@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-meta;
+  }
+  @layer components {
+    .btn-meta {
+      @apply hover:bg-white hover:text-meta w-full bg-meta text-white  font-medium rounded-md text-center border-0 transition-colors;
+    }
+  }
+}

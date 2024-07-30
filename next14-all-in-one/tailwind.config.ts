@@ -13,8 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      aspectRatio: {
+        "1/1": "1/1",
+      },
+      colors: {
+        meta: "#ff4f44",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+    require("daisyui"),
+  ],
 };
 export default config;
